@@ -74,5 +74,27 @@
             <a class="back-link" href="about.html">&#8592; Quay lại</a>
         </div>
     </main>
+
+    <script>
+        function copyToClipboard(text, button) {
+            navigator.clipboard.writeText(text).then(() => {
+                const originalText = button.innerHTML;
+                button.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Đã sao chép!';
+                button.style.background = 'linear-gradient(135deg, #10b981 0%, #059669 100%)';
+                setTimeout(() => {
+                    button.innerHTML = originalText;
+                    button.style.background = '';
+                }, 2000);
+            });
+        }
+        document.querySelector('.gmail-button').addEventListener('click', function(e) {
+            e.preventDefault();
+            copyToClipboard(document.querySelector('.email-text').textContent, this);
+        });
+        document.querySelector('.phone-button').addEventListener('click', function(e) {
+            e.preventDefault();
+            copyToClipboard(document.querySelector('.phone-text').textContent, this);
+        });
+    </script>
 </body>
 </html>
