@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sản phẩm</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Trang chủ</a></li>
+                <li><a href="group-info.html" class="nav-link">Thông tin nhóm</a></li>
+                <li><a href="about.html" class="nav-link">Giới thiệu thành viên</a></li>
+                <li><a href="document.html" class="nav-link">Hợp đồng thành lập, quy tắc và kế hoạch giao tiếp nhóm</a></li>
+                <li><a href="activity.html" class="nav-link">Hoạt động nhóm</a></li>
+                <li><a href="product.html" class="nav-link active">Sản phẩm</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="product-section">
+        <div class="product-container">
+            <div class="product-header">
+                <h1 class="product-title">Sản phẩm</h1>
+                <p class="product-subtitle">Video phim và poster đồ án của nhóm</p>
+            </div>
+
+            <div class="product-content">
+                <!-- Video Section -->
+                <div class="video-showcase">
+                    <video class="product-video" src="videos/product-film.mp4" controls preload="metadata" poster="images/product-poster.jpg"></video>
+                    <div class="video-info">
+                        <h2>Video sản phẩm đồ án</h2>
+                        <p>Video giới thiệu về dự án Clean water and sanitation của nhóm #01ai7hoc.</p>
+                    </div>
+                </div>
+
+                <!-- Poster Section -->
+                <div class="poster-showcase">
+                    <h2>Poster sản phẩm</h2>
+                    <embed src="documents/product-poster.pdf" type="application/pdf" class="poster-pdf" />
+                    <div class="pdf-fallback">
+                        <p>Trình duyệt của bạn không hỗ trợ xem PDF trực tiếp.</p>
+                        <a href="documents/product-poster.pdf" class="download-btn" download>Tải xuống PDF</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+
+<!-- Đặt file videos/product-film.mp4 vào đúng thư mục để hiển thị. -->
