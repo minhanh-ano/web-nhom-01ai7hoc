@@ -122,6 +122,17 @@ img {
 	animation: fadeIn 0.6s ease-in-out;
 }
 
+picture {
+	display: block;
+}
+
+picture img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	animation: fadeIn 0.6s ease-in-out;
+}
+
 .navbar {
 	position: fixed;
 	top: 0;
