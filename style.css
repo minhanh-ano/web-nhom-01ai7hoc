@@ -1380,6 +1380,38 @@ img {
 	width: 100%;
 }
 
+.contract-card {
+	grid-column: 1 / -1;
+}
+
+.contract-pdf-viewer {
+	margin-top: 20px;
+	width: 100%;
+	height: 600px;
+	border-radius: 12px;
+	overflow: hidden;
+	background: rgba(255, 255, 255, 0.05);
+}
+
+.contract-pdf-embed {
+	width: 100%;
+	height: 100%;
+	border: none;
+	border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+	.contract-pdf-viewer {
+		height: 500px;
+	}
+}
+
+@media (max-width: 540px) {
+	.contract-pdf-viewer {
+		height: 400px;
+	}
+}
+
 /* === ACTIVITY PAGE === */
 .activity-section {
 	min-height: 100vh;
