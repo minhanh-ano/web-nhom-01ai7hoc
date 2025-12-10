@@ -1264,6 +1264,10 @@ img {
 	max-width: 90vw;
 	height: auto;
 	object-fit: contain;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: high-quality;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 	filter: drop-shadow(0 10px 26px rgba(0, 0, 0, 0.35));
 	transition: all 0.4s ease;
 }
@@ -1271,6 +1275,34 @@ img {
 .group-logo-block:hover .group-logo-img {
 	transform: scale(1.05) translateY(-4px);
 	filter: drop-shadow(0 15px 36px rgba(127, 208, 255, 0.2));
+}
+
+.group-photo-showcase {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto 48px;
+	animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+.group-photo-img {
+	width: 100%;
+	max-width: 800px;
+	height: auto;
+	max-height: 500px;
+	object-fit: cover;
+	border-radius: 18px;
+	box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: high-quality;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transition: all 0.4s ease;
+}
+
+.group-photo-showcase:hover .group-photo-img {
+	transform: scale(1.02) translateY(-4px);
+	box-shadow: 0 16px 50px rgba(0, 0, 0, 0.4), 0 0 30px rgba(127, 208, 255, 0.2);
+	filter: brightness(1.05) contrast(1.05);
 }
 
 .group-info-content {
