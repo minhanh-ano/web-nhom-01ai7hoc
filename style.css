@@ -1265,8 +1265,8 @@ picture img {
 
 .logo-meaning-section {
 	display: grid;
-	grid-template-columns: 40% 1fr;
-	gap: 32px;
+	grid-template-columns: 35% 1fr;
+	gap: 40px;
 	align-items: start;
 	margin-bottom: 48px;
 	animation: fadeInUp 0.8s ease-out 0.3s both;
