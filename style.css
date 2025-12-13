@@ -1770,6 +1770,34 @@ picture img {
 	.product-video {
 		min-height: 280px;
 	}
+
+	.poster-showcase {
+		padding: 16px;
+	}
+
+	.poster-image {
+		max-height: 50vh;
+	}
+}
+
+@media (max-width: 540px) {
+	.product-video {
+		min-height: 220px;
+	}
+
+	.poster-showcase {
+		padding: 12px;
+	}
+
+	.poster-showcase h2 {
+		font-size: 18px;
+		margin-bottom: 12px;
+	}
+
+	.poster-image {
+		max-height: 40vh;
+		border-radius: 8px;
+	}
 }
 
 .info-card-text:last-child {
